@@ -24,4 +24,4 @@ let ProductSchema=mongoose.Schema({
     }
 });
 
-let Product=module.exports=mongoose.model("Product",ArticleSchema);
+let Product=module.exports=mongoose.model("Product",ProductSchema);
