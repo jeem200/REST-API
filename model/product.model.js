@@ -1,22 +1,27 @@
 let mongoose=require("mongoose");
 
-let ArticleSchema=mongoose.Schema({
+let ProductSchema=mongoose.Schema({
 
-    title:
+    Name:
     {
         type:String,
         required:true
     },
-    author:
+    Price:
+    {
+        type:Number,
+        required:true
+    },
+    Description:
     {
         type:String,
         required:true
     },
-    body:
+    ImagePath:
     {
         type:String,
         required:true
     }
 });
 
-let Article=module.exports=mongoose.model("Article",ArticleSchema);
+let Product=module.exports=mongoose.model("Product",ArticleSchema);
